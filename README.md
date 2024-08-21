@@ -11,7 +11,6 @@ This is the implementation of the approach described in the paper:
 
 ### Results on BCCP
 표 입력
-![스크린샷 2024-08-22 003906](https://github.com/user-attachments/assets/08009ba0-3ea8-4832-8374-f53ce29e5cb8)
 
 ## Quick start
 To get started as quickly as possible, follow the instructions in this section. This will allow you to prepare the image classification dataset and train the model from scratch.
