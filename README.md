@@ -104,6 +104,7 @@ python3 save_model_to_registry.py -d dataset_name -t target_day -l label --user_
 - `--model-name`: Specifies the model name. Default: `cls_model`.
 
 
+### Real-Time Data Pipeline and Visualization Setup
 We have documented the process of implementing a real-time visualization dashboard using Grafana to display original data and predicted values. This system involves several key steps, including the creation of a data subscriber to retrieve data from a Kafka topic, transmitting this data to an API server, receiving the predicted values, and sending them to the target database. The entire setup allows for real-time monitoring and visualization of both original and predicted data using Grafana.
 The implementation process is outlined in detail across the following three documents, presented in sequential order:
 
