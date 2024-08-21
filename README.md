@@ -18,23 +18,15 @@ This is the implementation of the approach described in the paper:
     <td> Test Accuracy </td>
   </tr>
   <tr>
-    <td rowspan="5"> Cargo </td>
-  </tr>
-  <tr>
-    <td rowspan="3"> Grund truth labels </td>
-    <td rowspan="3"> User feedback-based labels </td>
-  </tr>
-  <tr>
+    <td rowspan="4"> Cargo </td>
+    <td rowspan="2"> Grund truth labels </td>
     <td> Monday </td>
-    <td> Tuesday </td>
-    <td> Monday </td>
-    <td> Tuesday </td>
+    <td> 0.801 </td>
   </tr>
   <tr>
-    <td> 컨텐츠 내용8-2 </td>
-    <td> 컨텐츠 내용9-2 </td>
-    <td> 컨텐츠 내용8-2 </td>
-    <td> 컨텐츠 내용9-2 </td>
+    <td rowspan="2"> User feedback-based labels labels </td>
+    <td rowspan="2"> Tuesday </td>
+    <td rowspan="2"> 0.644 </td>
   </tr>
 </table>
 
