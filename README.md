@@ -8,7 +8,7 @@ This is the implementation of the approach described in the paper:
 > 논문 저자, 논문제목. 학회이름, 연도.
 
 ### Quick start
---
+---
 
 To get started as quickly as possible, follow the instructions in this section. This will allow you to prepare the image classification dataset and train the model from scratch.
 
