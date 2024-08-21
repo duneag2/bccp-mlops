@@ -11,6 +11,7 @@ This is the implementation of the approach described in the paper:
 
 ### Results on BCCP
 표 입력
+![image](https://www.notion.so/MLOps-81b6b5facd3a4535afedf809f36cdb2a?pvs=4#095232b1db0c483084cc0ec858a69205)
 
 ## Quick start
 To get started as quickly as possible, follow the instructions in this section. This will allow you to prepare the image classification dataset and train the model from scratch.
