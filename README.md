@@ -79,7 +79,7 @@ docker compose up -d --build --force-recreate
   Access [localhost:9001](http://localhost:9001/) (username: `minio`, password: `miniostorage`).
   ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/e4d6ad20-c912-4b6c-a9d9-b6b70dc8e0e7)
   ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/b6bdf68a-5243-48de-a331-336661b4e4c1)
-  When you first access it, there will be no buckets. Go to the "Create a bucket" section, set the name to mlflow, and create the bucket. (There is no need to click on the toggles below.)
+  When you first access it, there will be no buckets. Go to the **Create a bucket** section, set the **Bucket Name** to **mlflow**, and create the bucket. (There is no need to click on the toggles below.)
   ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/43c2f4c9-9cce-4087-891a-bcbb483a1106)
   ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/7cac725f-50f1-49cb-9946-1ef7ce19b486)
 
