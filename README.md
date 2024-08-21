@@ -6,6 +6,7 @@ Early Korean Version available at: https://github.com/duneag2/capstone-mlops
 This is the implementation of the approach described in the paper:
 
 > 논문 저자, 논문제목. 학회이름, 연도.
+
 논문에 쓴 이미지 하나 넣는다든가..
 
 ### Results on BCCP
