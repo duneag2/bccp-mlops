@@ -92,14 +92,13 @@ docker compose up -d --build --force-recreate
 ```
 python3 save_model_to_registry.py -d dataset_name -t target_day -l label --user_accuracy user_accuracy -b Y/N -s sampling_type --monday_num number_of_images --tuesday_num number_of_images -r ratio --model_name model_name
 ```
-
-- `-d` or `--dataset`: specifies the dataset to use , e.g. `cargo`.
-- `-t` or `--target`: specifies the target day(`monday` or `tuesday`). Monday Dataset만 사용하고 싶은 경우 target_day에 monday를 입력하고, Monday와 Tuesday dataset을 모두 사용하고 싶은 경우 target_day에 tuesday를 입력하세요. Default: `monday`
-- `-l` or `--label`: specifies the 학습에 사용할 라벨. ground_truth 옵션은 학습시에 이미지에 대한 정답 라벨을 사용한다. user_feedback 옵션은 사용자가 이미지를 보고 feedback하여 라벨을 생성하기에 라벨의 정확도가 낮은 상황을 가정한 옵션이다. user_feedback 라벨의 정확도는 user_accuracy 옵션을 이용해 설정할 수 있다.  Default: `ground_truth`.
-- `--user_accuracy`: user_feedback 라벨을 사용할 경우의 정확도를 설정한다. Default: `0.7`.
-- `-b` or `--bayasian_cut_off`: 모델 학습 전 학습할 데이터에 대해 bayesian cut-off를 사용할 지 여부를 결정한다. Y 를 입력 시 사용할 수 있고, N을 입력시 사용하지 않을 수 있다. Default: N.
-- `-s` or `--sampling_type`: Reuse Buffer에서 재학습할 이미지를 샘플링하는 방법을 결정한다. none 사용시 Reuse Buffer를 사용하지 않는다. random 사용시 randon sampling이 적용된다. l1-norm 사용시 L1-norm을 적용한 CP sampling 기법이 사용된다.  l2-norm 사용시 L2-norm을 적용한 CP sampling 기법이 사용된다.  cosine_similarity 사용시 Cosine-Similarity을 적용한 CP sampling 기법이 사용된다. Default: `none`.
-- `--monday_num`: monday dataset의 이미지 개수를 입력한다.
-- `--tuesday_num`: tuesday dataset의 이미지 개수를 입력한다.
-- `-r` or `--ratio`: Sampling type이 none이 아닌 경우, reuse Buffer에서 추출할 샘플의 비율을 결정한다.
-- `--model-name`: specifies the model name. Default: `cls_model`.
+- `-d` or `--dataset`: Specifies the dataset to use, e.g., `cargo`.
+- `-t` or `--target`: Specifies the target day (`monday` or `tuesday`). If you want to use only the Monday dataset, input `monday` for the `target_day`. If you want to use both the Monday and Tuesday datasets, input `tuesday` for the `target_day`. Default: `monday`.
+- `-l` or `--label`: Specifies the label to use for training. The `ground_truth` option uses the correct labels for the images during training. The `user_feedback` option assumes a scenario where the labels are generated based on user feedback on the images, thus assuming lower accuracy of the labels. The accuracy of the `user_feedback` labels can be set using the `user_accuracy` option. Default: `ground_truth`.
+- `--user_accuracy`: Sets the accuracy when using the `user_feedback` labels. Default: `0.7`.
+- `-b` or `--bayesian_cut_off`: Determines whether to use Bayesian cut-off for the dataset before model training. Enter `Y` to use it or `N` to not use it. Default: `N`.
+- `-s` or `--sampling_type`: Determines the method for sampling images to be re-trained from the Reuse Buffer. If set to `none`, the Reuse Buffer will not be used. If set to `random`, random sampling will be applied. If set to `l1-norm`, the L1-norm-based CP sampling method will be used. If set to `l2-norm`, the L2-norm-based CP sampling method will be used. If set to `cosine_similarity`, the Cosine Similarity-based CP sampling method will be used. Default: `none`.
+- `--monday_num`: Specifies the number of images in the Monday dataset.
+- `--tuesday_num`: Specifies the number of images in the Tuesday dataset.
+- `-r` or `--ratio`: When the sampling type is not `none`, this sets the proportion of samples to extract from the Reuse Buffer.
+- `--model-name`: Specifies the model name. Default: `cls_model`.
