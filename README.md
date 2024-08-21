@@ -22,15 +22,17 @@ This is the implementation of the approach described in the paper:
   </tr>
   <tr>
     <td rowspan="3"> Grund truth labels </td>
-  </tr>
-  <tr>
     <td rowspan="3"> User feedback-based labels </td>
   </tr>
   <tr>
-    <td> 컨텐츠 내용8-1 </td>
-    <td> 컨텐츠 내용9-1 </td>
+    <td> Monday </td>
+    <td> Tuesday </td>
+    <td> Monday </td>
+    <td> Tuesday </td>
   </tr>
   <tr>
+    <td> 컨텐츠 내용8-2 </td>
+    <td> 컨텐츠 내용9-2 </td>
     <td> 컨텐츠 내용8-2 </td>
     <td> 컨텐츠 내용9-2 </td>
   </tr>
