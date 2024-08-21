@@ -24,9 +24,9 @@ This is the implementation of the approach described in the paper:
     <td> 0.801 </td>
   </tr>
   <tr>
-    <td rowspan="2"> User feedback-based labels labels </td>
-    <td rowspan="2"> Tuesday </td>
-    <td rowspan="2"> 0.644 </td>
+    <td> User feedback-based labels labels </td>
+    <td> Tuesday </td>
+    <td> 0.644 </td>
   </tr>
 </table>
 
