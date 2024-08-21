@@ -10,25 +10,7 @@ This is the implementation of the approach described in the paper:
 논문에 쓴 이미지 하나 넣는다든가..
 
 ### Results on BCCP
-<table style="border: 2px;">
-  <tr>
-    <td> Dataset </td>
-    <td> Label </td>
-    <td> Senario </td>
-    <td> Test Accuracy </td>
-  </tr>
-  <tr>
-    <td rowspan="4"> Cargo </td>
-    <td rowspan="2"> Grund truth labels </td>
-    <td> Monday </td>
-    <td> 0.801 </td>
-  </tr>
-  <tr>
-    <td> User feedback-based labels labels </td>
-    <td> Tuesday </td>
-    <td> 0.644 </td>
-  </tr>
-</table>
+표 입력
 
 ## Quick start
 To get started as quickly as possible, follow the instructions in this section. This will allow you to prepare the image classification dataset and train the model from scratch.
