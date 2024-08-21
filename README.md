@@ -46,29 +46,29 @@ python3 prepare_dataset.py -d dataset_name
 
 Once the execution is complete, a JSON file will be generated in the `data_generate` folder.
 
-Data Generation using Docker
+### Data Generation using Docker
 
 This step requires Docker Desktop and PostgreSQL to be installed.
 
 Run the following command in the `data_generate/` directory to create the Data Generator container.
 
-```bash
+```
 DATASET=dataset_name TARGET_DAY=target_day docker compose up -d --build --force-recreate
 ```
 
 Monday Dataset만 사용하고 싶은 경우 target_day에 monday를 입력하고, Monday와 Tuesday dataset을 모두 사용하고 싶은 경우 target_day에 tuesday를 입력하세요.
 
-Training
+### Training
 
 model_registry/ 폴더에서 모델 학습을 위한 컨테이너를 생성합니다.
 
-```bash
+```
 docker compose up -d --build --force-recreate
 ```
 
 우리의 모델을 학습시키길 원한다면 아래의 명령어를 실행하십시오.
 
-```bash
+```
 python3 save_model_to_registry.py -d dataset_name -t target_day -l label --user_accuracy user_accuracy -b Y/N -s sampling_type --monday_num number_of_images --tuesday_num number_of_images -r ratio --model_name model_name
 ```
 
