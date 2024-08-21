@@ -12,20 +12,25 @@ This is the implementation of the approach described in the paper:
 ### Results on BCCP
 <table style="border: 2px;">
   <tr>
-    <td> 컨텐츠 내용1 </td>
-    <td> 컨텐츠 내용2 </td>
-    <td> 컨텐츠 내용3 </td>
-  </tr><tr>
-    <td colspan="3"> 컨텐츠 내용4 </td>
-  </tr><tr>
-    <td> 컨텐츠 내용5 </td>
-    <td colspan="2"> 컨텐츠 내용6 </td>
-  </tr><tr>
-    <td rowspan="3"> 컨텐츠 내용7 </td>
-  </tr><tr>
+    <td> Dataset </td>
+    <td> Label </td>
+    <td> Senario </td>
+    <td> Test Accuracy </td>
+  </tr>
+  <tr>
+    <td rowspan="5"> Cargo </td>
+  </tr>
+  <tr>
+    <td rowspan="3"> Grund truth labels </td>
+  </tr>
+  <tr>
+    <td rowspan="3"> User feedback-based labels </td>
+  </tr>
+  <tr>
     <td> 컨텐츠 내용8-1 </td>
     <td> 컨텐츠 내용9-1 </td>
-  </tr><tr>
+  </tr>
+  <tr>
     <td> 컨텐츠 내용8-2 </td>
     <td> 컨텐츠 내용9-2 </td>
   </tr>
