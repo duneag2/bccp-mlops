@@ -66,6 +66,26 @@ model_registry/ 폴더에서 모델 학습을 위한 컨테이너를 생성합�
 docker compose up -d --build --force-recreate
 ```
 
+ ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/f51d472d-3748-406c-b65c-664c7a8cf310)
+
+
+
+
+  [localhost:5001](http://localhost:5001/) 접속 (딱히 아무것도 안 뜬다면 정상)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/ac82e811-0ed8-4b86-b287-537e045b9e0f)
+
+
+  [localhost:9001](http://localhost:9001/) 접속 (username: `minio`, password: `miniostorage`)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/e4d6ad20-c912-4b6c-a9d9-b6b70dc8e0e7)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/b6bdf68a-5243-48de-a331-336661b4e4c1)
+  처음 들어가면 bucket이 없을 수 있다. -> Create a bucket -> 이름 `mlflow`로 설정 후 생성 (아래 토글들은 클릭하지 않으시면 됨)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/43c2f4c9-9cce-4087-891a-bcbb483a1106)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/7cac725f-50f1-49cb-9946-1ef7ce19b486)
+
+
+
+
+
 우리의 모델을 학습시키길 원한다면 아래의 명령어를 실행하십시오.
 
 ```
