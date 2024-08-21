@@ -6,6 +6,10 @@ Early Korean Version available at: https://github.com/duneag2/capstone-mlops
 This is the implementation of the approach described in the paper:
 
 > 논문 저자, 논문제목. 학회이름, 연도.
+논문에 쓴 이미지 하나 넣는다든가..
+
+### Results on BCCP
+표 입력하면 좋을 거 같음
 
 ## Quick start
 To get started as quickly as possible, follow the instructions in this section. This will allow you to prepare the image classification dataset and train the model from scratch.
@@ -41,3 +45,40 @@ python3 prepare_dataset.py -d dataset_name
 ```
 
 Once the execution is complete, a JSON file will be generated in the `data_generate` folder.
+
+Data Generation using Docker
+
+This step requires Docker Desktop and PostgreSQL to be installed.
+
+Run the following command in the `data_generate/` directory to create the Data Generator container.
+
+```bash
+DATASET=dataset_name TARGET_DAY=target_day docker compose up -d --build --force-recreate
+```
+
+Monday Dataset만 사용하고 싶은 경우 target_day에 monday를 입력하고, Monday와 Tuesday dataset을 모두 사용하고 싶은 경우 target_day에 tuesday를 입력하세요.
+
+Training
+
+model_registry/ 폴더에서 모델 학습을 위한 컨테이너를 생성합니다.
+
+```bash
+docker compose up -d --build --force-recreate
+```
+
+우리의 모델을 학습시키길 원한다면 아래의 명령어를 실행하십시오.
+
+```bash
+python3 save_model_to_registry.py -d dataset_name -t target_day -l label --user_accuracy user_accuracy -b Y/N -s sampling_type --monday_num number_of_images --tuesday_num number_of_images -r ratio --model_name model_name
+```
+
+- `-d` or `--dataset`: specifies the dataset to use , e.g. `cargo`.
+- `-t` or `--target`: specifies the target day(`monday` or `tuesday`). Monday Dataset만 사용하고 싶은 경우 target_day에 monday를 입력하고, Monday와 Tuesday dataset을 모두 사용하고 싶은 경우 target_day에 tuesday를 입력하세요. Default: `monday`
+- `-l` or `--label`: specifies the 학습에 사용할 라벨. ground_truth 옵션은 학습시에 이미지에 대한 정답 라벨을 사용한다. user_feedback 옵션은 사용자가 이미지를 보고 feedback하여 라벨을 생성하기에 라벨의 정확도가 낮은 상황을 가정한 옵션이다. user_feedback 라벨의 정확도는 user_accuracy 옵션을 이용해 설정할 수 있다.  Default: `ground_truth`.
+- `--user_accuracy`: user_feedback 라벨을 사용할 경우의 정확도를 설정한다. Default: `0.7`.
+- `-b` or `--bayasian_cut_off`: 모델 학습 전 학습할 데이터에 대해 bayesian cut-off를 사용할 지 여부를 결정한다. Y 를 입력 시 사용할 수 있고, N을 입력시 사용하지 않을 수 있다. Default: N.
+- `-s` or `--sampling_type`: Reuse Buffer에서 재학습할 이미지를 샘플링하는 방법을 결정한다. none 사용시 Reuse Buffer를 사용하지 않는다. random 사용시 randon sampling이 적용된다. l1-norm 사용시 L1-norm을 적용한 CP sampling 기법이 사용된다.  l2-norm 사용시 L2-norm을 적용한 CP sampling 기법이 사용된다.  cosine_similarity 사용시 Cosine-Similarity을 적용한 CP sampling 기법이 사용된다. Default: `none`.
+- `--monday_num`: monday dataset의 이미지 개수를 입력한다.
+- `--tuesday_num`: tuesday dataset의 이미지 개수를 입력한다.
+- `-r` or `--ratio`: Sampling type이 none이 아닌 경우, reuse Buffer에서 추출할 샘플의 비율을 결정한다.
+- `--model-name`: specifies the model name. Default: `cls_model`.
