@@ -105,6 +105,7 @@ python3 save_model_to_registry.py -d dataset_name -t target_day -l label --user_
 
 ### Comparative Experiments
 Additionally, we conducted comparative experiments with two notable papers in data cleansing: Cleanlab and Ye et al. You can run the two comparative experiments using the following commands.
+
 **Cleanlab** (C. G. Northcutt, et al., ”Confident Learning: : Estimating Uncertainty in Dataset Labels,” Journal of Artificial Intelligence Research, pp. 1373-1411, 2021.)
 ```
 python3 save_model_to_registry_cleanlab.py -d dataset_name -l label --user_accuracy user_accuracy --monday_num number_of_images --tuesday_num number_of_images --model_name model_name
