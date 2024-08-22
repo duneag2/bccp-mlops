@@ -103,6 +103,16 @@ python3 save_model_to_registry.py -d dataset_name -t target_day -l label --user_
 - `-r` or `--ratio`: When the sampling type is not `none`, this sets the proportion of samples to extract from the Reuse Buffer.
 - `--model-name`: Specifies the model name. Default: `cls_model`.
 
+### Comparative Experiments
+Additionally, we conducted comparative experiments with two notable papers in data cleansing: Cleanlab and Ye et al. You can run the two comparative experiments using the following commands.
+**Cleanlab** (C. G. Northcutt, et al., ”Confident Learning: : Estimating Uncertainty in Dataset Labels,” Journal of Artificial Intelligence Research, pp. 1373-1411, 2021.)
+```
+python3 save_model_to_registry_cleanlab.py -d dataset_name -l label --user_accuracy user_accuracy --monday_num number_of_images --tuesday_num number_of_images --model_name model_name
+```
+**ANL_CE** (X. Ye, et al., ”Active Negative Loss Functions for Learning with Noisy Labels,” 37th International Conference on Neural Information Processing Systems, pp. 6917-6940, 2023.)
+```
+python3 save_model_to_registry_ANL_CE.py -d dataset_name -l label --user_accuracy user_accuracy --monday_num number_of_images --tuesday_num number_of_images --model_name model_name
+```
 
 ### Real-Time Data Pipeline and Visualization Setup
 We have documented the process of implementing a real-time visualization dashboard using Grafana to display original data and predicted values. This system involves several key steps, including the creation of a data subscriber to retrieve data from a Kafka topic, transmitting this data to an API server, receiving the predicted values, and sending them to the target database. The entire setup allows for real-time monitoring and visualization of both original and predicted data using Grafana.
