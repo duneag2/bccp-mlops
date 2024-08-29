@@ -10,9 +10,8 @@ This is the implementation of the approach described in the paper:
 논문에 쓴 이미지 하나 넣는다든가..
 
 ### Results on BCCP
-![tables](https://github.com/user-attachments/assets/05285dc6-5420-413d-aa73-92fc1566c954)
-
 ![table1](https://github.com/user-attachments/assets/830bcca0-c781-4b13-abdc-95e3800aa9dd)
+![tables](https://github.com/user-attachments/assets/05285dc6-5420-413d-aa73-92fc1566c954)
 
 ## Quick start
 To get started as quickly as possible, follow the instructions in this section. This will allow you to prepare the image classification dataset and train the model from scratch.
