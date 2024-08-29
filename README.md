@@ -10,64 +10,18 @@ This is the implementation of the approach described in the paper:
 논문에 쓴 이미지 하나 넣는다든가..
 
 ### Results on BCCP
-<table border="1" cellpadding="10" cellspacing="0" style="background-color: #ffffff;">
-    <caption>Classification results for Monday and Tuesday scenarios (Ground truth labels, User feedback-based labels)</caption>
-    <thead style="background-color: #ffffff;">
-        <tr>
-            <th style="background-color: #ffffff;">Dataset</th>
-            <th style="background-color: #ffffff;">Label</th>
-            <th style="background-color: #ffffff;">Scenario</th>
-            <th style="background-color: #ffffff;">Test Accuracy</th>
-        </tr>
-    </thead>
-    <tbody style="background-color: #ffffff;">
-        <tr>
-            <td rowspan="3" style="background-color: #ffffff;">Cargo</td>
-            <td rowspan="2" style="background-color: #ffffff;">Ground truth labels</td>
-            <td style="background-color: #ffffff;">Monday</td>
-            <td style="background-color: #ffffff;">0.801 &plusmn; 0.009</td>
-        </tr>
-        <tr>
-            <td style="background-color: #ffffff;">Tuesday</td>
-            <td style="background-color: #ffffff;">0.644 &plusmn; 0.004</td>
-        </tr>
-        <tr>
-            <td style="background-color: #ffffff;">User feedback-based labels</td>
-            <td style="background-color: #ffffff;">Tuesday</td>
-            <td style="background-color: #ffffff;">0.623 &plusmn; 0.011</td>
-        </tr>
-        <tr>
-            <td rowspan="3" style="background-color: #ffffff;">Bag</td>
-            <td rowspan="2" style="background-color: #ffffff;">Ground truth labels</td>
-            <td style="background-color: #ffffff;">Monday</td>
-            <td style="background-color: #ffffff;">0.957 &plusmn; 0.004</td>
-        </tr>
-        <tr>
-            <td style="background-color: #ffffff;">Tuesday</td>
-            <td style="background-color: #ffffff;">0.884 &plusmn; 0.006</td>
-        </tr>
-        <tr>
-            <td style="background-color: #ffffff;">User feedback-based labels</td>
-            <td style="background-color: #ffffff;">Tuesday</td>
-            <td style="background-color: #ffffff;">0.866 &plusmn; 0.024</td>
-        </tr>
-        <tr>
-            <td rowspan="3" style="background-color: #ffffff;">Sugarcane Leaf Disease</td>
-            <td rowspan="2" style="background-color: #ffffff;">Ground truth labels</td>
-            <td style="background-color: #ffffff;">Monday</td>
-            <td style="background-color: #ffffff;">0.834 &plusmn; 0.010</td>
-        </tr>
-        <tr>
-            <td style="background-color: #ffffff;">Tuesday</td>
-            <td style="background-color: #ffffff;">0.768 &plusmn; 0.010</td>
-        </tr>
-        <tr>
-            <td style="background-color: #ffffff;">User feedback-based labels</td>
-            <td style="background-color: #ffffff;">Tuesday</td>
-            <td style="background-color: #ffffff;">0.743 &plusmn; 0.025</td>
-        </tr>
-    </tbody>
-</table>
+| Dataset                | Label                              | Scenario | Test Accuracy      |
+|------------------------|------------------------------------|----------|--------------------|
+| **Cargo**              | **Ground truth labels**            | Monday   | 0.801 ± 0.009      |
+|                        |                                    | Tuesday  | 0.644 ± 0.004      |
+|                        | **User feedback-based labels**     | Tuesday  | 0.623 ± 0.011      |
+| **Bag**                | **Ground truth labels**            | Monday   | 0.957 ± 0.004      |
+|                        |                                    | Tuesday  | 0.884 ± 0.006      |
+|                        | **User feedback-based labels**     | Tuesday  | 0.866 ± 0.024      |
+| **Sugarcane Leaf Disease** | **Ground truth labels**            | Monday   | 0.834 ± 0.010      |
+|                        |                                    | Tuesday  | 0.768 ± 0.010      |
+|                        | **User feedback-based labels**     | Tuesday  | 0.743 ± 0.025      |
+
 
 
 ## Quick start
