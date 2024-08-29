@@ -10,19 +10,17 @@ This is the implementation of the approach described in the paper:
 논문에 쓴 이미지 하나 넣는다든가..
 
 ### Results on BCCP
-| Dataset                | Label                              | Scenario | Test Accuracy      |
-|------------------------|------------------------------------|----------|--------------------|
-| **Cargo**              | **Ground truth labels**            | Monday   | 0.801 ± 0.009      |
-|                        |                                    | Tuesday  | 0.644 ± 0.004      |
-|                        | **User feedback-based labels**     | Tuesday  | 0.623 ± 0.011      |
-| **Bag**                | **Ground truth labels**            | Monday   | 0.957 ± 0.004      |
-|                        |                                    | Tuesday  | 0.884 ± 0.006      |
-|                        | **User feedback-based labels**     | Tuesday  | 0.866 ± 0.024      |
-| **Sugarcane Leaf Disease** | **Ground truth labels**            | Monday   | 0.834 ± 0.010      |
-|                        |                                    | Tuesday  | 0.768 ± 0.010      |
-|                        | **User feedback-based labels**     | Tuesday  | 0.743 ± 0.025      |
-
-
+| Dataset                  | Label                              | Scenario | Test Accuracy      |
+|--------------------------|------------------------------------|----------|--------------------|
+| **Cargo**                | **Ground truth labels**            | Monday   | 0.801 ± 0.009      |
+|                          |                                    | Tuesday  | 0.644 ± 0.004      |
+|                          | **User feedback-based labels**     | Tuesday  | 0.623 ± 0.011      |
+| **Bag**                  | **Ground truth labels**            | Monday   | 0.957 ± 0.004      |
+|                          |                                    | Tuesday  | 0.884 ± 0.006      |
+|                          | **User feedback-based labels**     | Tuesday  | 0.866 ± 0.024      |
+| **Sugarcane Leaf Disease** | **Ground truth labels**           | Monday   | 0.834 ± 0.010      |
+|                          |                                    | Tuesday  | 0.768 ± 0.010      |
+|                          | **User feedback-based labels**     | Tuesday  | 0.743 ± 0.025      |
 
 ## Quick start
 To get started as quickly as possible, follow the instructions in this section. This will allow you to prepare the image classification dataset and train the model from scratch.
