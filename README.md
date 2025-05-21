@@ -5,7 +5,7 @@ Early Korean Version available at: https://github.com/duneag2/capstone-mlops
 
 This is the implementation of the approach described in the paper:
 
-> S. Lee, N. Jeong, J. Je, and S.-Y. Lee, "BCCP: An MLOps Framework for Self-cleansing Real-Time Data Noise via Bayesian Cut-off-based Closest Pair Sampling", IEEE International Conference on AI x Data & Knowledge Engineering (to appear)
+> S. Lee, N. Jeong, J. Je, and S.-Y. Lee, "BCCP: An MLOps Framework for Self-cleansing Real-Time Data Noise via Bayesian Cut-off-based Closest Pair Sampling", 2024 IEEE International Conference on AI x Data & Knowledge Engineering (Link: https://ieeexplore.ieee.org/document/10990103)
 
 ## Quick start
 To get started as quickly as possible, follow the instructions in this section. This will allow you to prepare the image classification dataset and train the model from scratch.
